@@ -9,19 +9,7 @@
 name: Minimum Build
 
 on:
-  repository_dispatch:
-    types: [lede-upstream-updated]
-  release:
-    types: published
-  push:
-#     branches:
-#       - master
-    paths:
-      - 'newifi3-minimum.config'
-#   schedule:
-#      - cron: 0 8 * * 5
-#  watch:
-#     types: started
+  workflow_dispatch:
 
 env:
   REPO_URL: https://github.com/allankevinrichie/lede
