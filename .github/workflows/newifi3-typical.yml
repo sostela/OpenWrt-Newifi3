@@ -9,13 +9,7 @@
 name: Typical Build
 
 on:
-  repository_dispatch:
-    types: [minimum-build-success]
-#   push:
-#     branches:
-#       - master
-#     paths:
-#       - 'newifi3-typical.config'
+  workflow_dispatch:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
